@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:title="abonnement"
+        android:id="@+id/abonement"
+        android:icon="@drawable/addicon"
+  />
+
+    <item android:title="protabilite"
+              android:icon="@drawable/portabilite"
+              android:id="@+id/porta"
+/>
+  <item
+          android:id="@+id/reclam"
+          android:icon="@drawable/reclamation"
+          android:title="reclamation"/>
+
+</menu>

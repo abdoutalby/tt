@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:padding="15dp"
+
+        tools:context=".Login">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#16145F"
+              android:textSize="20sp"
+              android:text="Connectez vous :"
+              android:textAlignment="center"
+    />
+
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/lock"/>
+    <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+
+            android:elevation="@dimen/cardview_default_elevation"
+             android:hint="Login ..." />
+
+</LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="70dp"
+
+                    android:src="@drawable/password"/>
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:elevation="@dimen/cardview_default_elevation"
+                     android:hint="password"
+                    android:textColor="@color/black"
+            />
+
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+>
+            <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnbakcgroud"
+                    android:text="Connexion"
+
+                    android:id="@+id/loginbtn"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mot de pass ooublie ?"
+                      android:layout_centerHorizontal="true"
+                      android:layout_below="@+id/loginbtn"
+
+                      android:layout_marginTop="10dp"
+/>
+
+        </RelativeLayout>
+
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginimage" />
+
+    </LinearLayout>
+</RelativeLayout>

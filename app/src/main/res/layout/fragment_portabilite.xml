@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#F5F5F5"
+             tools:context=".portabilite">
+
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="#16145F"
+                      android:text="Portabilite : "
+                      android:textAlignment="center"
+                      android:textSize="25sp"/>
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:text="Infos generales :"
+            />
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Nom"/>
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+                        android:textColor="@color/black"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Prenom"/>
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+
+                        android:textColor="@color/black"
+                />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Adress"/>
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+
+                        android:textColor="@color/black"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Adress e-mail : "/>
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+                        android:textColor="@color/black"
+                />
+            </LinearLayout>
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:text="Passer l'offre :"
+            />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+            >
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Ancien operateur :"
+                />
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                    <CheckBox android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Orange"/>
+
+                    <CheckBox android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Ooredoo"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Numero de telepone : "/>
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+                        android:textColor="@color/black"
+                />
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:weightSum="2"
+                          android:orientation="horizontal">
+                <Button android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnbakcgroud"
+                        android:layout_marginEnd="10dp"
+                        android:height="30px"
+                        android:layout_height="match_parent"
+                        android:text="Confirme"/>
+                <Button
+                        android:background="@drawable/btnbakcgroud"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="0dp"
+                        android:height="30px"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="annuler"/>
+
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/portaimg"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
