@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
-
+            android:id="@+id/username"
             android:elevation="@dimen/cardview_default_elevation"
              android:hint="Login ..." />
 
@@ -56,6 +56,8 @@
                     android:padding="20dp"
                     android:elevation="@dimen/cardview_default_elevation"
                      android:hint="password"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
                     android:textColor="@color/black"
             />
 
