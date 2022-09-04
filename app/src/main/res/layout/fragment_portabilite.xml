@@ -45,6 +45,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:id="@+id/portanom"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
@@ -63,6 +64,8 @@
                         android:text="Prenom"/>
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="0dp"
+
+                        android:id="@+id/portaprenom"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
@@ -88,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
-
+                        android:id="@+id/portaadr"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -108,6 +111,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
+                        android:id="@+id/portaemail"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -137,10 +141,12 @@
 
                     <CheckBox android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                                android:id="@+id/portaornage"
                               android:text="Orange"/>
 
                     <CheckBox android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                                android:id="@+id/portaooredoo"
                               android:text="Ooredoo"/>
 
                 </LinearLayout>
@@ -162,6 +168,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
+                        android:id="@+id/portanumtt"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -176,6 +183,7 @@
                         android:background="@drawable/btnbakcgroud"
                         android:layout_marginEnd="10dp"
                         android:height="30px"
+                        android:id="@+id/portabtnconfirmer"
                         android:layout_height="match_parent"
                         android:text="Confirme"/>
                 <Button

@@ -30,6 +30,8 @@
     />
 
 
+
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,11 +49,15 @@
                 android:layout_alignParentRight="true"
                 android:layout_height="wrap_content">
 
-            <CheckBox android:layout_width="wrap_content"
+            <CheckBox
+                    android:id="@+id/abhommechekc"
+                    android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="Homme"/>
 
-            <CheckBox android:layout_width="wrap_content"
+            <CheckBox
+                    android:id="@+id/abfemmecheck"
+                    android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="Femme"/>
 
@@ -72,6 +78,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:id="@+id/AbEtNom"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:elevation="@dimen/cardview_default_elevation"
@@ -90,6 +97,7 @@
                 android:text="Prenom"/>
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="0dp"
+                android:id="@+id/AbEtPrenom"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
@@ -111,6 +119,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEtDn"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -131,6 +140,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEtAdr"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -151,6 +161,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEtemp"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -178,6 +189,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEtorigin"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -197,6 +209,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEtVilleact"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -216,6 +229,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEtcodeposte"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -244,6 +258,7 @@
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:id="@+id/AbEttel"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -264,6 +279,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:id="@+id/AbEtEmail"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:elevation="@dimen/cardview_default_elevation"
@@ -292,6 +308,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
+            android:id="@+id/AbEttt"
                 android:elevation="@dimen/cardview_default_elevation"
                 android:textColor="@color/black"
         />
@@ -308,7 +325,9 @@
                 android:layout_marginEnd="10dp"
                 android:height="30px"
                 android:layout_height="match_parent"
-                android:text="Confirme"/>
+                android:text="Confirme"
+                android:id="@+id/saveabonementbtn"
+        />
         <Button
                 android:background="@drawable/btnbakcgroud"
                 android:layout_marginEnd="10dp"

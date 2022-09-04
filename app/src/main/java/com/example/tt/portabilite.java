@@ -1,10 +1,18 @@
 package com.example.tt;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Toast;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.example.tt.utils.DBHelper;
+import com.example.tt.utils.Portabilite;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +29,18 @@ public class portabilite extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+    private EditText nom ;
+    private  EditText prenom ;
+    private  EditText adr ;
+    private  EditText email ;
+    private CheckBox orange ;
+    private CheckBox ooredoo ;
+    private  EditText num ;
+
+    private Button save ;
+
 
     public portabilite() {
         // Required empty public constructor
@@ -58,5 +78,41 @@ public class portabilite extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_portabilite, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        nom = view.findViewById(R.id.portanom) ;
+        prenom = view.findViewById(R.id.portaprenom);
+        email = view.findViewById(R.id.portaemail);
+        num = view.findViewById(R.id.portanumtt);
+        adr = view.findViewById(R.id.portaadr);
+        orange = view.findViewById(R.id.portaornage);
+        ooredoo = view.findViewById(R.id.portaooredoo);
+        save = view.findViewById(R.id.portabtnconfirmer);
+
+
+        save.setOnClickListener(view1 -> {
+            String operateur = "" ;
+            if(orange.isChecked()){
+                operateur = "orange" ;
+            }else if (ooredoo.isChecked()){
+                operateur = "ooredoo";
+            }
+            Portabilite dto = new Portabilite(
+                    nom.getText().toString(),
+                    prenom.getText().toString(),
+                    adr.getText().toString(),
+                    email.getText().toString(),
+                    operateur ,
+                    num.getText().toString()
+                    );
+            DBHelper dbHelper  = new DBHelper(getContext());
+            boolean done = dbHelper.portabilite(dto);
+            Toast.makeText(getContext(), done ? "saved ": "opps", Toast.LENGTH_LONG).show();
+
+        });
     }
 }

@@ -42,6 +42,7 @@
                         android:text="Nom"/>
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="0dp"
+                        android:id="@+id/recnom"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
@@ -65,7 +66,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
-
+                    android:id="@+id/recprenom"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -86,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
-
+                android:id="@+id/recadr"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -106,7 +107,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
-
+        android:id="@+id/reccp"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -127,7 +128,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
-
+        android:id="@+id/rectel"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -147,6 +148,7 @@
                         android:layout_height="wrap_content"
                         android:padding="20dp"
                         android:elevation="@dimen/cardview_default_elevation"
+                        android:id="@+id/recmail"
                         android:textColor="@color/black"
                 />
             </LinearLayout>
@@ -179,16 +181,20 @@
 
                     <CheckBox android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                                android:id="@+id/recMobch"
                               android:text="Mobile"/>
                     <CheckBox android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                                android:id="@+id/recFixCh"
                               android:text="Fixe"/>
                     <CheckBox android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                              android:id="@+id/recinter"
                               android:text="Internet"/>
 
                     <CheckBox android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
+                              android:id="@+id/recwifi"
                               android:text="WIFI"/>
 
                 </LinearLayout>
@@ -206,6 +212,7 @@
                            android:drawableTint="@color/black"
                            android:inputType="textImeMultiLine"
                            android:layout_height="wrap_content"
+                            android:id="@+id/recdesc"
                            android:padding="20dp"
                            android:elevation="@dimen/cardview_default_elevation"
                            android:hint="description"
@@ -224,6 +231,7 @@
                         android:background="@drawable/btnbakcgroud"
                         android:layout_marginEnd="10dp"
                         android:height="30px"
+                        android:id="@+id/recBtn"
                         android:layout_height="match_parent"
                         android:text="Confirme"/>
                 <Button
